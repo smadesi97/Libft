@@ -6,37 +6,26 @@
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:41:03 by smadesi           #+#    #+#             */
-/*   Updated: 2019/05/22 12:30:08 by smadesi          ###   ########.fr       */
+/*   Updated: 2019/05/24 12:51:06 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-#include <stdio.h>
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t i;
-	size_t length;
+	size_t j;
 
-	length = 0;
-	while (dst[length] && length < size)
-		length += 1;
-	i = length;
-	while (src[length - i] && length + 1 < size )
+	i = 0;
+	j = 0;
+	while (dst[i])
+		i++;
+	while (src[j] && i + j < dstsize)
 	{
-		dst[length] = src[length - i];
-		length += 1;
+		dst[i + j] = src[i];
+		i++;
 	}
-	if (i < size)
-		dst[length] = '\0';
-	return (i + ft_strlen(src));
+	return (i + j);
 }
 
-int	main()
-{
-	char dst[10] = "hello";
-	char src[] = "How are you";
-
-	printf("%d\n", ft_strlcat(dst, src, size));
-	printf("%s\n", dst);
-}
