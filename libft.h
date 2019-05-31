@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/30 09:16:20 by smadesi           #+#    #+#             */
-/*   Updated: 2019/05/31 11:21:13 by smadesi          ###   ########.fr       */
+/*   Created: 2019/05/31 11:12:25 by smadesi           #+#    #+#             */
+/*   Updated: 2019/05/31 14:13:48 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
-{
-	size_t	i;
-	char	*d;
-	char	*s;
+#ifndef LIBFT_H
+# define LIBFT_H
 
-	i = 0;
-	d = (char*)dst;
-	s = (char*)src;
-	while (i < n)
-	{
-		d[i] = s[i];
-		i++;
-	}
-	return (dst);
-}
+# include <stdio.h>
+# include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
+
+size_t	ft_strlen(const char *s);
+char	*ft_strcpy(char *dst, const char *src);
+char	*ft_strcat(char *s1, const char *s2);
+char	*ft_strncat(char restrict s1, const char *restrict s2, size_t n);
+
+

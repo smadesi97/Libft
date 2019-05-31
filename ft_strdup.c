@@ -6,12 +6,13 @@
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 12:08:05 by smadesi           #+#    #+#             */
-/*   Updated: 2019/05/21 16:14:22 by smadesi          ###   ########.fr       */
+/*   Updated: 2019/05/31 10:42:32 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 char	*ft_strdup(const char *s1)
 {
@@ -30,4 +31,13 @@ char	*ft_strdup(const char *s1)
 		i++;
 	}
 	return (str);
+}
+
+int main()
+{
+		char *s;
+		char str[] = "hello";
+		s = ft_strdup(str);
+		printf("%s\n", s);
+		return (0);
 }
