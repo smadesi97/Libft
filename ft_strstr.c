@@ -6,9 +6,11 @@
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 10:00:21 by smadesi           #+#    #+#             */
-/*   Updated: 2019/05/29 12:53:12 by smadesi          ###   ########.fr       */
+/*   Updated: 2019/06/03 15:11:57 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strstr(const char *haystack, const char *neddle)
 {

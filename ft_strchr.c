@@ -6,11 +6,11 @@
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 13:18:21 by smadesi           #+#    #+#             */
-/*   Updated: 2019/05/22 14:59:04 by smadesi          ###   ########.fr       */
+/*   Updated: 2019/06/03 14:22:08 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
