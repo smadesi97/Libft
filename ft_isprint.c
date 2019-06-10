@@ -6,15 +6,15 @@
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 16:39:38 by smadesi           #+#    #+#             */
-/*   Updated: 2019/06/03 14:19:21 by smadesi          ###   ########.fr       */
+/*   Updated: 2019/06/10 17:16:42 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+int		ft_isprint(int c)
 {
-	if (c > 3 && c < 128)
+	if (c >= 32 && c < 127)
 		return (1);
 	return (0);
 }
