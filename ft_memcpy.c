@@ -6,7 +6,7 @@
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 09:16:20 by smadesi           #+#    #+#             */
-/*   Updated: 2019/06/03 14:15:42 by smadesi          ###   ########.fr       */
+/*   Updated: 2019/06/20 11:37:56 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	d = (char*)dst;
 	s = (char*)src;
+	if (!dst && !src)
+	{
+		return (NULL);
+	}
 	while (i < n)
 	{
 		d[i] = s[i];

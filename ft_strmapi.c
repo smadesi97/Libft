@@ -6,13 +6,13 @@
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 10:30:05 by smadesi           #+#    #+#             */
-/*   Updated: 2019/06/06 10:50:09 by smadesi          ###   ########.fr       */
+/*   Updated: 2019/06/18 11:38:29 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*fresh;
 	size_t	i;

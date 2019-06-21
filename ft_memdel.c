@@ -6,13 +6,13 @@
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 10:43:07 by smadesi           #+#    #+#             */
-/*   Updated: 2019/06/05 10:50:30 by smadesi          ###   ########.fr       */
+/*   Updated: 2019/06/18 14:47:40 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_mendel(void **ap)
+void	ft_memdel(void **ap)
 {
 	if (!ap)
 		return ;

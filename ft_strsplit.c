@@ -6,7 +6,7 @@
 /*   By: smadesi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/14 11:41:02 by smadesi           #+#    #+#             */
-/*   Updated: 2019/06/14 16:20:21 by smadesi          ###   ########.fr       */
+/*   Updated: 2019/06/19 13:33:58 by smadesi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,10 @@ char				**ft_strsplit(char const *s, char c)
 
 	i = 0;
 	k = 0;
+	if (!s)
+	{
+		return (NULL);
+	}
 	tab = (char **)malloc(sizeof(char *) * (ft_cntwrd(s, c)) + 1);
 	if (tab == NULL)
 		return (NULL);
